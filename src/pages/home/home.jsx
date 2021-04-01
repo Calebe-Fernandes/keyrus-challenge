@@ -29,7 +29,7 @@ class Home extends React.Component {
            .then(res => res.json())
            .then(res => {
                 if(res.error)
-                    return alert(res.error)
+                    return alert(`Cant communicate with API, error : ${res.error}`)
 
                 
                 return this.setState({
@@ -84,7 +84,7 @@ class Home extends React.Component {
     }
 
     let min = Math.min(...list)
-    console.log(list)
+
 
     let position = list.indexOf(min)
    
@@ -141,46 +141,44 @@ class Home extends React.Component {
                 </div> 
 
                 <div className="our-products">
+                        
                     <h1>Our products</h1>
 
                     <div className= 'carousel'>
                         <button className='direction' onClick={this.prev}>
                             <img className='arrow' src={leftArrow} alt="left button" />
                         </button>
+
                         <div className='card-div'>
                             <main className='card-scroll' ref={this.carouslRef}>
                                 {this.state.loading && (<h1>Loading...</h1>)}  
                                 {!this.state.loading && (
                                     this.state.api.length < 1 ? (<h1>There are no products</h1>)  :
-                                     this.state.api.map(item => ( 
+                                    this.state.api.map(item => ( 
                                         <div className='card' key = {item.code}>
 
                                             <img src="https://img.freepik.com/psd-gratuitas/modelo-de-postagem-do-instagram-na-maquete-de-celular-preto-flutuante-premium_200619-41.jpg?size=626&ext=jpg" alt=""/>
                                             <h1 className='text'>{item.name}</h1>
                                             <p>{item.summary}</p>
                                             <h2> ${item.price.value}</h2>
-                                                
+                                                    
                                             {item.stock.stockLevel  > 0 ? (<button > Add to Cart</button>):
                                                 <>
-                                                    <button disabled > Add to Cart</button>
-                                                  
+                                                    <button disabled > Add to Cart</button> 
                                                 </>
-                                            
-                                              
                                             }
+
                                             <a href={`http://challenge-front-end.us-east-2.elasticbeanstalk.com/retrieve-product/${item.code}`}>View Details</a>
-                                        
+                                            
                                         </div>
-                                )))}  
+                                    )))}  
                             </main>
                         </div>
+
                         <button className='direction' onClick={this.next}>
                             <img className='arrow' src={righttArrow} alt="right button" />
                         </button>
-                     </div>
-
-    
-                  
+                    </div>
                 </div>
                             
             </div> 
