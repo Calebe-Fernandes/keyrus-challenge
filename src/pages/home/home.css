@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header{
+    width: 100%;
+}
+
+footer{
+    width: 100%;
+}
+
+body{
+    background-color: whitesmoke;
+
+    display: flex;
+    flex-direction: column;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner{
+    max-width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 32px;
+    background-color: black;
+
+  
+}
+
+.banner img{
+    width: 60%;
+
+}
+
+.banner-description{
+  color: white;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+
+
+}
+.banner-description h1{
+    margin-bottom: 24px;
+    color: whitesmoke;
+    font-size: 3vw;
+
+}
+
+.banner-description p{
+    margin-bottom: 16px;
+    font-size: 1.6vw;
+    max-width: 880px;
+    margin-right: 28px;
+}
+
+.banner-description h2{
+    margin-bottom: 26px;
+    font-size: 3vw;
+
+}
+ .active{
+    width: 16vw;
+    height: 4vw;
+
+    font-size: 2vw ;
+
+    background-color:#F5B111 ;
+    border-radius: 32px;
+    border: none;
+
+    cursor: pointer;
+    
+}
+
+.our-products h1{
+    margin-top: 32px;
+    font-size: 4rem;
+}
+
+.card-carroussel{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+    
+
+/*carrousel*/
+
+
+.carousel {
+    display: flex;
+    flex-direction: row;
+    margin: 36px 15rem;
+
+  }
+
+  .direction {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0;
+    width: 10%;
+
+    cursor: pointer;
+
+  }
+
+  
+  .arrow {
+    width: 50%;
+  
+  }
+
+
+.card-div {
+  width: 50vw;
+
+}
+
+.card-scroll {
+    display: flex;
+    overflow: hidden;
+  }
+
+
+
+
+.off:disabled{
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+
+    width: 16vw;
+    height: 4vw;
+
+    font-size: 2vw ;
+
+    border-radius: 32px;
+
+  }
+  
+.banner-description #off p{
+    color: rgba(211, 211, 211, 0.4);
+    font-size: 12px;
+    margin-top:6px;
+    margin-right: 0px !important;
+
+  }
+
+  .card-scroll .card button:disabled{
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+    cursor:default !important;
+    border-radius: 32px;
+  }

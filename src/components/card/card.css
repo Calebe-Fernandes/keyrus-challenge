@@ -1,0 +1,64 @@
+
+  .card {
+    background-color: black;
+    min-width: 49%;
+    max-width: 50%;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 12px;
+
+    color: whitesmoke;
+    
+  }
+
+  .card img{
+    width: 100%;
+   border-radius: 10px 10px 0px 0px;
+    
+  }
+
+  .card h1{
+    margin: 16px 0px 16px 0px;
+    font-size: 2.6vw;
+  }
+
+  .card p{
+    margin-bottom: 38px;
+    font-size: 1vw;
+    margin-right: 26px;
+    margin-left: 26px;
+
+}
+
+.card h2{
+    margin-bottom: 12px;
+    font-size: 1.4vw;
+
+}
+
+  .text {
+    color: white;
+  } 
+
+  .card button{
+   
+    height: 36px;
+    width: 40%;
+
+    font-size: 1.2rem;
+
+    background-color:#F5B111 ;
+    border-radius: 32px;
+    border: none;
+
+    cursor: pointer;
+
+    margin-bottom: 26px;
+}
+
+.card a {
+  font-size: 12px;
+  margin-bottom: 12px;
+
+  color: whitesmoke;
+}
