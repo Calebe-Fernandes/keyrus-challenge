@@ -2,7 +2,7 @@
 
 <h1 align="center">
 <br>
-  <img src="https://nerdin.com.br/img/empresa/164.png" alt="Keyrus" width="350">
+  <img src="https://pbs.twimg.com/profile_images/1177317956839268355/j9z6UgUN_400x400.png" alt="Keyrus" width="350">
 <br>
 <br>
 Desafio processo Seletivo Keyrus
