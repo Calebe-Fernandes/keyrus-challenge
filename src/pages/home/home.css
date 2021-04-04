@@ -18,13 +18,15 @@ body{
 
     display: flex;
     flex-direction: column;
+    height:100%;
 }
 
-div{
+.main-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 120px;
 }
 
 .banner{
@@ -42,7 +44,6 @@ div{
 
 .banner img{
     width: 60%;
-
 }
 
 .banner-description{
@@ -52,8 +53,9 @@ div{
   display: flex;
   flex-direction: column;
 
-
+  align-items: center;
 }
+
 .banner-description h1{
     margin-bottom: 24px;
     color: whitesmoke;
@@ -73,7 +75,8 @@ div{
     font-size: 3vw;
 
 }
- .active{
+
+.active{
     width: 16vw;
     height: 4vw;
 
@@ -85,6 +88,12 @@ div{
 
     cursor: pointer;
     
+}
+.our-products{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .our-products h1{
@@ -98,6 +107,12 @@ div{
     align-items: flex-end;
 }
     
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 /*carrousel*/
 
@@ -106,6 +121,8 @@ div{
     display: flex;
     flex-direction: row;
     margin: 36px 15rem;
+    justify-content: center;
+    align-items: center;
 
   }
 

@@ -1,16 +1,16 @@
 import React from 'react'
-
-import "./home.css"
-import promo from '../../assets/mobile.svg'
-
-
-import leftArrow from '../../assets/left-arrow.svg'
-import righttArrow from '../../assets/right-arrow.svg'
-
-
-
+import {Link} from 'react-router-dom'
 
 import '../../components/card/card.css'
+import "./home.css"
+import promo from '../../assets/mobile.svg'
+import leftArrow from '../../assets/left-arrow.svg'
+import righttArrow from '../../assets/right-arrow.svg'
+import Header from '../../components/header/header'
+import Footer from '../../components/footer/footer'
+
+
+
 
 class Home extends React.Component {
     state = {
@@ -75,12 +75,12 @@ class Home extends React.Component {
 
   lowestPrice = () => {
    if(!this.state.loading){ 
+    
     var list = []
 
     for (let index = 0; index < this.state.api.length; index++) {
         const element = this.state.api[index].price.value;
-        list.push(element)  
-          
+        list.push(element)     
     }
 
     let min = Math.min(...list)
@@ -117,10 +117,12 @@ class Home extends React.Component {
         return (
            
          <>  
-           
+           <header>
+               <Header/>
+           </header>
            
 
-            <div>
+            <div className='main-content'>
             
                 <div className="banner">
                     
@@ -180,8 +182,16 @@ class Home extends React.Component {
                         </button>
                     </div>
                 </div>
+ 
+                <Link to = "/product">
+                    <button>Next</button>
+                </Link> 
                             
             </div> 
+
+            <footer>
+                <Footer/>
+            </footer>
             
         
         
