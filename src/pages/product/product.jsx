@@ -1,10 +1,12 @@
 import React from 'react'
+//STYLES
+import './product.css'
 
-
+//COMPONENTS
 import Footer from '../../components/footer/footer'
 import Header from '../../components/header/header'
 
-import './product.css'
+
 
 
 class Product extends React.Component{
@@ -14,7 +16,7 @@ class Product extends React.Component{
         loading: false
     }
 
-    
+    // API CALL
     componentWillMount() {
         let id = this.props.match.params
 
@@ -41,6 +43,7 @@ class Product extends React.Component{
                    
     }
 
+    //STATES
     constructor(props) {
         super(props);
         this.state = {
@@ -50,7 +53,7 @@ class Product extends React.Component{
         
     }
 
-
+    // INCREMENT BUTTON FOR PRODUCT QUANTITY
     increment(){
 
         this.setState({
@@ -58,6 +61,7 @@ class Product extends React.Component{
         })
     }
 
+    //DECREMENT BUTONN FOR PRODUCT QUANTITY - IT CANNOT BE LESS THAN 0.
     decrement(){
         if(this.state.cart === 0){
             return 
@@ -68,11 +72,7 @@ class Product extends React.Component{
         })
     }
 
-    setCart(){
-        this.content = this.state.cart
-        console.log(this.content)
-    }
-
+    //SHOW FULL PRODUCT DESCRIPTION
     showDetails(){
         if(this.state.description){
             this.setState({
@@ -85,6 +85,8 @@ class Product extends React.Component{
             });
         }
     }
+
+    //THE STOCK VALIDATION WAS MADE BY RENDERING BUTTONS DEPENDING ON THE QUANTITY THA THE USER WANTS, AND THE QUANTITY IN STOCK AT LINE 118
 
   render() {
     return (
@@ -113,7 +115,7 @@ class Product extends React.Component{
                                 </div>
                                 
 
-                                {this.state.api.stock.stockLevel  > 0 && this.state.api.stock.stockLevel >= this.state.cart ? (<button  className='active' onClick={this.setCart.bind(this)}>Add to Cart</button>):
+                                {this.state.api.stock.stockLevel  > 0 && this.state.api.stock.stockLevel >= this.state.cart ? (<button  className='active'>Add to Cart</button>):
                                     <>
                                         <button disabled className='off'> Add to Cart</button> 
                                     </>

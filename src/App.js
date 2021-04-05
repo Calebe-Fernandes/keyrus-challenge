@@ -3,7 +3,7 @@ import Home from "./pages/home/home.jsx";
 
 import {BrowserRouter, Switch, Route} from 'react-router-dom'
 import Product from "./pages/product/product.jsx";
-import Carrinho from "./components/carrinho/carrinho.jsx";
+
 
 
 

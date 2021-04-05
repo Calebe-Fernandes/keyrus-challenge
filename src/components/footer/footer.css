@@ -1,7 +1,7 @@
 
 .footer{
     width: 100%;
-    height:100px;
+    height:60px;
 
     background-color: black;
     display: flex;
@@ -25,13 +25,14 @@
 }
 
 .menu-footer img{
-    height: 70px;
-    width: 70px;
+    height: 46px;
+    width: 46px;
     margin-right: 26px;
 }
 
 .menu-footer h1{
     color: #F5B111;
+    font-size: 26px;
 }
 
 .menu-footer  a img{
@@ -72,10 +73,21 @@
 
     .menu-footer h1,p{
         text-align: center;
-        font-size: 10px;
+        font-size: 16px;
     }
     .menu-footer h1{
         font-size: 18px;
     }
     
+  } 
+
+  @media screen and (min-width: 1680px) {
+  
+  
+
+    .menu-footer h1,p{
+        text-align: center;
+        font-size: 26px;
+    }
+  
   } 

@@ -1,12 +1,15 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
+//STYLES
 import '../../components/card/card.css'
 import "./home.css"
 
+//ASSETS
 import promo from '../../assets/mobile.svg'
 import leftArrow from '../../assets/left-arrow.svg'
 import righttArrow from '../../assets/right-arrow.svg'
+//COMPONENTS
 import Header from '../../components/header/header'
 import Footer from '../../components/footer/footer'
 
@@ -19,7 +22,7 @@ class Home extends React.Component {
         loading: false
     }
 
-    
+    // API CALL 
     componentWillMount() {
         this.setState(state => ({
             ...state,
@@ -45,13 +48,14 @@ class Home extends React.Component {
               
     }
 
-
+    // STATES
     constructor(props) {
         super(props);
         this.carouslRef = React.createRef();
 
     }
 
+    //CARROUSEL PREV ITEM
    prev = () => {
         this.carouslRef &&
         this.carouslRef.current &&
@@ -63,7 +67,7 @@ class Home extends React.Component {
         });
   }
 
-
+    //CARROUSEL NEXT ITEM
    next = () => {
     this.carouslRef &&
       this.carouslRef.current &&
@@ -75,7 +79,7 @@ class Home extends React.Component {
       });
   }
 
-
+  //BANNER WITH THE LOWEST PRICE PRODUCT AND STOCK VALIDATION
   lowestPrice = () => {
    if(!this.state.loading){ 
     
@@ -111,9 +115,7 @@ class Home extends React.Component {
    }
   }
 
-
-
-
+  //STOCK VALIDATION IN CARROUSEL ITENS WAS MADE BY RENDERING ENABLE OR DISABLE BUTTONS AT LINE 173
 
     render() {
         return (
@@ -153,6 +155,7 @@ class Home extends React.Component {
                             <img className='arrow' src={leftArrow} alt="left button" />
                         </button>
 
+                      
                         <div className='card-div'>
                             <main className='card-scroll' ref={this.carouslRef}>
                                 {this.state.loading && (<h1>Loading...</h1>)}  

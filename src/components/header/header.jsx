@@ -18,8 +18,8 @@ export default function Header() {
            
           
            <div className="menu-header">
-                <a href=""><img src={perfil} alt=""/></a>
-                <a href=""><img src={carrinho} alt=""/></a>
+                <a href="/"><img src={perfil} alt=""/></a>
+                <a href="/"><img src={carrinho} alt=""/></a>
            </div>
 
        </div>

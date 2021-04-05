@@ -19,6 +19,7 @@ body{
     display: flex;
     flex-direction: column;
     height:100%;
+
 }
 
 .main-content{
@@ -255,6 +256,45 @@ body{
     .card button{
       height: 30px;
       width: 120px;
+    }
+
+    .arrow{
+      width: 42px;
+    }
+
+  } 
+  @media screen and (min-width: 1682px) {
+
+    .active{
+      height: 42px;
+      width: 40%px;
+      font-size:calc(12px + 1vw);
+      margin-bottom: 16px;
+    }
+
+    .our-products h1{
+      font-size:calc(12px + 6vw);
+    }
+    
+    .our-products p{
+      font-size:calc(12px + 1.2vw);
+    }
+
+  
+    .card h2{
+      font-size:calc(12px + 2vw);
+    }
+
+    .card a{
+      margin: 0;
+      margin-bottom: 16px;
+      font-size:calc(12px + 0.6vw);
+      width: 100%;
+    }
+    .card button{
+      height: 60px;
+      width: 220px;
+      font-size: 30px;
     }
 
     .arrow{
