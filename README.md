@@ -55,7 +55,7 @@ As tecnologias utilizadas foram:
     - Se não há retorno de produtos na home, ele informa com a mensagem "There are no Products"
     - Durante a requisição, informa o usuário do carregamento da página
 
-<img src ="https://github.com/Calebe-Fernandes/keyrus-challenge/blob/main/src/assets/preview.gif" width="600">
+<img src ="https://github.com/Calebe-Fernandes/keyrus-challenge/blob/main/src/assets/preview.gif" width="980">
 
 
 ##  Download e Teste
