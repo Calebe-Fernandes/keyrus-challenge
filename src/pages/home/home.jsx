@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 
 import '../../components/card/card.css'
 import "./home.css"
+
 import promo from '../../assets/mobile.svg'
 import leftArrow from '../../assets/left-arrow.svg'
 import righttArrow from '../../assets/right-arrow.svg'
@@ -36,12 +37,14 @@ class Home extends React.Component {
                 
                 loading: false,
                 api: res.products
+                
             
            })}
             
         )
-                    
+              
     }
+
 
     constructor(props) {
         super(props);
@@ -113,7 +116,6 @@ class Home extends React.Component {
 
 
     render() {
-
         return (
            
          <>  
@@ -170,7 +172,10 @@ class Home extends React.Component {
                                                 </>
                                             }
 
-                                            <a href={`http://challenge-front-end.us-east-2.elasticbeanstalk.com/retrieve-product/${item.code}`}>View Details</a>
+                                             <Link to = {`${item.code}`} >
+                                                <a href=''>View Details</a>
+                                             </Link>
+                                                
                                             
                                         </div>
                                     )))}  
@@ -183,10 +188,7 @@ class Home extends React.Component {
                     </div>
                 </div>
  
-                <Link to = "/product">
-                    <button>Next</button>
-                </Link> 
-                            
+
             </div> 
 
             <footer>

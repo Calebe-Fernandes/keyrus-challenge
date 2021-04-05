@@ -10,6 +10,7 @@
     align-items: center;
 
     padding: 24px 70px;
+
 }
 
 .menu-header{
@@ -45,7 +46,12 @@
         flex-direction: column;
         height: 158px;
         justify-content: center;
+        align-items: center;
+
+        padding: 0;
+        margin: 0;
     }
+
 
     #logo img{
       display: none;
@@ -53,7 +59,7 @@
     
     a{
         width: 2rem;
-        margin-right: 18px;
+        margin: 0;
     }
 
     .menu-header a img {
@@ -63,10 +69,19 @@
         width: 2rem;
 
         margin-top: 16px;
+
+        margin-right: 0px;
+
        
     }
 
     .menu-header h1{
         text-align: center;
+    }
+
+    .link{
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
     }
   } 

@@ -1,23 +1,40 @@
 
-
-.product-card{
+.wrapper{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+.product-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding-bottom: 120px;
 
-    background-color:#F5B111 ;
+    border: 2px solid #F5B111;
+    background-color:black ;
 
     margin-top: 36px;
 
     padding:32px;
     
     border-radius: 12px;
+
+    max-width: 1220px;
+}
+.product-card img {
+    width: 40vw;
+    height: 460px;
+    margin: 26px;
+
+    border-radius: 16px ;
 }
 
+
 .infos{
-    border: 2px solid whitesmoke;
+    border: 2px solid #F5B111;
     border-radius: 8px;
 
     width: 280px;
@@ -30,25 +47,95 @@
     align-items: center;
 
     padding: 22px;
+
+    text-align: center;
+}
+.infos h1,h3{
+    margin-bottom: 28px;
 }
 
-.product-card img {
-    width: 40vw;
-    height: 460px;
-    margin: 26px;
+.infos h1{
+    font-size: 48px;
+    color: whitesmoke;
+}
 
-    border-radius: 16px ;
+.infos h2{
+    font-size: 36px;
+    color: #F5B111;
+    margin-bottom: 18px;
+}
+
+.infos h3{
+    font-size: 21px;
+    color: whitesmoke;
+}
+
+.activeb{
+    background-color: #F5B111;
+    width: 180px;
+    font-size: 26px;
+}
+
+.off:disabled{
+    width: 180px;
+    font-size: 26px ;
+}
+
+.info p{
+    color:whitesmoke
+
+}
+
+.counter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+
+}
+
+.counter button{
+    width: 30px;
+    height: 30px;
+}
+.counter p{
+    font-size: 32px;
+    margin-bottom: 0px  !important;
+    margin-left: 12px;
+    margin-right: 12px;
+    color: whitesmoke;
+}
+
+.description{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 120px;
+
+    padding:32px;
+    
+    border-radius: 12px;
+
+    width: 62vw;
+
+    color: whitesmoke;
+
+    margin-top: 32px;
 }
 
 
-.infos button{
-    height: 36px;
-    width: 128px;
+
+.product-card .show-hide {
+    
+    width: 180px;
+    height: 32px;
 
     border-radius: 16px;
 
-    border: none;
-    background-color: whitesmoke;
-
     cursor: pointer;
+   
+
 }

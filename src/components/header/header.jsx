@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import "./header.css"
 import logo from '../../assets/smartphone.svg'
 import perfil from '../../assets/usuario-de-perfil.svg'
@@ -8,10 +9,13 @@ export default function Header() {
     return (
        
        <div className ="header">
-           <div id = "logo"className = "menu-header">
-                <img  src={logo} alt=""/>
-                <h1>PHOTO STORE</h1>
-           </div>
+        
+                <div id = "logo"className = "menu-header">
+                        <img  src={logo} alt=""/>
+                        <h1>PHOTO STORE</h1>
+                </div>
+  
+           
           
            <div className="menu-header">
                 <a href=""><img src={perfil} alt=""/></a>

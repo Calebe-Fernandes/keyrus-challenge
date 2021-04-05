@@ -17,14 +17,11 @@
     
   }
 
-  .card h1{
-    margin: 16px 0px 16px 0px;
-    font-size: 2.6vw;
-  }
+
 
   .card p{
     margin-bottom: 38px;
-    font-size: 1vw;
+    font-size: 18px;
     margin-right: 26px;
     margin-left: 26px;
 
@@ -32,18 +29,18 @@
 
 .card h2{
     margin-bottom: 12px;
-    font-size: 1.4vw;
+    font-size: 22px;
 
 }
 
-  .text {
+.text {
     color: white;
   } 
-
-  .card button{
+  
+.card button{
    
-    height: 36px;
-    width: 40%;
+    height: 38px;
+    width: 180px;
 
     font-size: 1.2rem;
 
@@ -57,8 +54,30 @@
 }
 
 .card a {
-  font-size: 12px;
+  font-size: 18px;
   margin-bottom: 12px;
 
   color: whitesmoke;
 }
+
+
+@media screen and (max-width: 960px) {
+  .card {
+    background-color: black;
+    min-width: 99%;
+    max-width: 100%;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 12px;
+
+    color: whitesmoke;
+    
+  }
+
+  .card h1{
+    margin: 16px 0px 16px 0px;
+    font-size:calc(12px + 0.1vw);
+  }
+ 
+ 
+} 

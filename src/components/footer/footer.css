@@ -47,7 +47,7 @@
   
     .footer{
         flex-direction: column;
-        height: 158px;
+        height: 60px;
         justify-content: center;
     }
 
@@ -70,7 +70,12 @@
        
     }
 
-    .menu-footer h1{
+    .menu-footer h1,p{
         text-align: center;
+        font-size: 10px;
     }
+    .menu-footer h1{
+        font-size: 18px;
+    }
+    
   } 

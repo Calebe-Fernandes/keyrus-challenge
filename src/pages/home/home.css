@@ -59,28 +59,29 @@ body{
 .banner-description h1{
     margin-bottom: 24px;
     color: whitesmoke;
-    font-size: 3vw;
+    font-size:calc(12px + 3vw);
 
 }
 
 .banner-description p{
     margin-bottom: 16px;
-    font-size: 1.6vw;
+    font-size:calc(12px + 1vw);
     max-width: 880px;
     margin-right: 28px;
 }
 
 .banner-description h2{
     margin-bottom: 26px;
-    font-size: 3vw;
+    font-size:calc(12px + 2vw);
 
 }
 
 .active{
-    width: 16vw;
-    height: 4vw;
+    width: 60%;
+    height: 10%;
+    padding: 10px;
 
-    font-size: 2vw ;
+    font-size:calc(12px + 1vw);
 
     background-color:#F5B111 ;
     border-radius: 32px;
@@ -94,11 +95,14 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    max-width: 100%;
 }
 
 .our-products h1{
-    margin-top: 32px;
-    font-size: 4rem;
+    margin-top: 18px;
+    font-size: 48px;
+    margin-bottom: 12px;
 }
 
 .card-carroussel{
@@ -131,7 +135,7 @@ body{
     border: none;
     outline: none;
     padding: 0;
-    width: 10%;
+    width: 100%;
 
     cursor: pointer;
 
@@ -139,8 +143,8 @@ body{
 
   
   .arrow {
-    width: 50%;
-  
+    width: 60px;
+
   }
 
 
@@ -186,3 +190,75 @@ body{
     cursor:default !important;
     border-radius: 32px;
   }
+
+
+
+
+  @media screen and (max-width: 960px) {
+  
+    .banner{
+      flex-direction: column;
+      padding: 12px;
+    }
+
+    .banner img{
+      width: 100%;
+
+      align-items: center;
+      margin-top: 0;
+    }
+
+    .banner-description h1{
+      font-size: 2.2rem;
+      margin-top: 8px;
+      margin-bottom: 8px;
+
+    }
+
+    .banner p{
+      font-size: 20px;
+      margin:0;
+      margin-bottom: 12px;
+      margin-left: 18px;
+      margin-right: 18px;    }
+
+    .banner-description h2{
+      font-size: 1.6rem;
+    }
+
+    .active{
+      height: 42px;
+      width: 40%px;
+      font-size:calc(12px + 1vw);
+      margin-bottom: 16px;
+    }
+
+    .our-products h1{
+      font-size:calc(12px + 6vw);
+    }
+    
+    .our-products p{
+      font-size:calc(12px + 1vw);
+    }
+
+  
+    .card h2{
+      font-size:calc(12px + 2vw);
+    }
+
+    .card a{
+      margin: 0;
+      margin-bottom: 16px;
+      font-size:calc(12px + 0.6vw);
+      width: 100%;
+    }
+    .card button{
+      height: 30px;
+      width: 120px;
+    }
+
+    .arrow{
+      width: 42px;
+    }
+
+  } 

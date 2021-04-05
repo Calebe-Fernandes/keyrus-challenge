@@ -1,10 +1,10 @@
 
-import Footer from "./components/footer/footer.jsx";
-import Header from "./components/header/header.jsx";
 import Home from "./pages/home/home.jsx";
 
 import {BrowserRouter, Switch, Route} from 'react-router-dom'
 import Product from "./pages/product/product.jsx";
+import Carrinho from "./components/carrinho/carrinho.jsx";
+
 
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
     <BrowserRouter>
         <Switch>
           <Route exact path = '/' component={Home}/>
-          <Route exact path = '/product' component={Product}/>
+          <Route exact path = '/:code' component={Product}/>
         </Switch>
     </BrowserRouter>
   );
