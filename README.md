@@ -55,6 +55,8 @@ As tecnologias utilizadas foram:
     - Se não há retorno de produtos na home, ele informa com a mensagem "There are no Products"
     - Durante a requisição, informa o usuário do carregamento da página
 
+<img src ="">
+
 
 ##  Download e Teste
 
