@@ -10,7 +10,7 @@ Desafio processo Seletivo Keyrus
 
 </h1>
 
-## Features
+## Tecnologias
 
 As tecnologias utilizadas foram:
 
@@ -20,10 +20,40 @@ As tecnologias utilizadas foram:
 
 - ⚠️ **JavaScript** — Para integração de API e manipulação de informações
 
-- React.Js como biblioteca de construção
+- 📙  **React.Js** como biblioteca de construção
 
  ## Descrição
+ O projeto se baseia em consumir uma API e tem 3 requerimentos principais, sendo eles:
 
+- Home Page
+- Product Page
+- Header e Footer
+
+ ## Requisitos
+
+**HOME - CONSULT ALL PRODUCTS** 
+- Carrossel com opção "Add to Cart"
+- Banner com o produto de menor preço
+- Carrossel com todos os produtos
+- Validação de estoque (se não houver estoque, remover a opção de adicionar ao carrinho)
+
+**PRODUCT PAGE - CONSULTATION BY PRODUCT CODE**
+- Construir uma página do produto com opção de adicionar ao carrinho
+- Preço dos produtos
+- Descrilção dos produtos
+- Nome do produto 
+- Botão "Add to Cart"
+- Validação de estoque (se não houver estoque, remover a opção de adicionar ao carrinho)
+- Resumo (summary)
+- Uma imagem para representação do produto
+
+## Funcionalidades Desenvolvidas
+    - Responsividade para tamanhos diferentes de telas e dispositivos
+    - Validação de estoque, renderizando botões ativos e inativos de acordo com o estoque disponível
+    - Carrossel dinâmico, caso a quantidade de produtos aumente ou diminua
+    - Consulta da página do produto em "View Details" ou por consulta através da url /{id}
+    - Se não há retorno de produtos na home, ele informa com a mensagem "There are no Products"
+    - Durante a requisição, informa o usuário do carregamento da página
 
 
 ##  Download e Teste
