@@ -58,6 +58,9 @@ As tecnologias utilizadas foram:
     - Carrinho na página de produtos (A validação de estoque da home consiste no estado ativo e inativo do botão)
 
 <img src ="https://github.com/Calebe-Fernandes/keyrus-challenge/blob/main/src/assets/preview.gif" width="980">
+<img src ="https://github.com/Calebe-Fernandes/keyrus-challenge/blob/main/src/assets/Cart.gif" width="980">
+<img src ="https://github.com/Calebe-Fernandes/keyrus-challenge/blob/main/src/assets/Responsive-pages.gif" width="980">
+
 
 
 
