@@ -54,9 +54,10 @@ As tecnologias utilizadas foram:
     - Consulta da página do produto em "View Details" ou por consulta através da url /{id}
     - Se não há retorno de produtos na home, ele informa com a mensagem "There are no Products"
     - Durante a requisição, informa o usuário do carregamento da página
+    - Carrinho na página de produtos ( A validação de estoque da home consiste no estado ativo e inativo do botão)
 
 <img src ="https://github.com/Calebe-Fernandes/keyrus-challenge/blob/main/src/assets/preview.gif" width="980">
-<img src ="https://github.com/Calebe-Fernandes/assets/blob/main/responsive.gif" width="980">
+
 
 
 
