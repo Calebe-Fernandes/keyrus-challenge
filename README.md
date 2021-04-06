@@ -56,7 +56,7 @@ As tecnologias utilizadas foram:
     - Durante a requisição, informa o usuário do carregamento da página
 
 <img src ="https://github.com/Calebe-Fernandes/keyrus-challenge/blob/main/src/assets/preview.gif" width="980">
-<img src ="https://github.com/Calebe-Fernandes/assets/blob/main/responsive.gif" width="980">
+
 
 
 ##  Download e Teste
