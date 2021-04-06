@@ -9,9 +9,11 @@ import "./home.css"
 import promo from '../../assets/mobile.svg'
 import leftArrow from '../../assets/left-arrow.svg'
 import righttArrow from '../../assets/right-arrow.svg'
+
+
 //COMPONENTS
-import Header from '../../components/header/header'
 import Footer from '../../components/footer/footer'
+import Header from '../../components/header/header'
 
 
 
@@ -52,6 +54,8 @@ class Home extends React.Component {
     constructor(props) {
         super(props);
         this.carouslRef = React.createRef();
+        
+        
 
     }
 
@@ -79,6 +83,8 @@ class Home extends React.Component {
       });
   }
 
+
+
   //BANNER WITH THE LOWEST PRICE PRODUCT AND STOCK VALIDATION
   lowestPrice = () => {
    if(!this.state.loading){ 
@@ -103,7 +109,7 @@ class Home extends React.Component {
             <h1>{lowest.name}</h1>
             <p>{lowest.summary}</p>
             <h2>${lowest.price.value}</h2>
-            {lowest.stock.stockLevel  > 0 ? (<button className = 'active'> Add to Cart</button>):
+            {lowest.stock.stockLevel  > 0 ? (<button className = 'active' > Add to Cart</button>):
                 <div id ='off'>
                     <button  className = 'off' disabled> Add to Cart</button>
                     <p>Out of Stock</p>
@@ -115,6 +121,7 @@ class Home extends React.Component {
    }
   }
 
+
   //STOCK VALIDATION IN CARROUSEL ITENS WAS MADE BY RENDERING ENABLE OR DISABLE BUTTONS AT LINE 173
 
     render() {
@@ -122,9 +129,10 @@ class Home extends React.Component {
            
          <>  
            <header>
-               <Header/>
+              <Header/>
            </header>
-           
+
+        
 
             <div className='main-content'>
             
@@ -138,7 +146,7 @@ class Home extends React.Component {
                             {!this.state.loading && (
                                 this.state.api.length < 1 ? (<h1>There are no products</h1>)  :
                                 this.lowestPrice()
-                             )} 
+                            )} 
 
                        
                                 
@@ -169,7 +177,7 @@ class Home extends React.Component {
                                             <p>{item.summary}</p>
                                             <h2> ${item.price.value}</h2>
                                                     
-                                            {item.stock.stockLevel  > 0 ? (<button > Add to Cart</button>):
+                                            {item.stock.stockLevel  > 0 && !this.state.loading ? (<button >Add to Cart</button>):
                                                 <>
                                                     <button disabled > Add to Cart</button> 
                                                 </>

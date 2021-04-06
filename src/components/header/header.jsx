@@ -6,14 +6,16 @@ import perfil from '../../assets/usuario-de-perfil.svg'
 import carrinho  from '../../assets/shopping-cart.svg'
 
 export default function Header() {
+   
     return (
        
        <div className ="header">
-        
+          
                 <div id = "logo"className = "menu-header">
-                        <img  src={logo} alt=""/>
+                <Link to='/'><img  src={logo} alt=""/> </Link>
                         <h1>PHOTO STORE</h1>
                 </div>
+          
   
            
           

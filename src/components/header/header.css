@@ -27,12 +27,13 @@
 
 .menu-header h1{
     color: #F5B111;
+    
 }
 
 .menu-header  a img{
     height: 48px;
     width: 48px;
-    margin-right: 46px;
+    margin-right: 32px;
 
 }
 
@@ -85,3 +86,4 @@
         text-decoration: none;
     }
   } 
+

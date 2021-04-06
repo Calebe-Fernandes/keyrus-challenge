@@ -1,31 +1,33 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
+
+import './carrinho.css'
 
 
 
 
 export default function Carrinho(props) {
-
-    const [count, setCount] = useState(0);
-
-  // Create handleIncrement event handler
-  const handleIncrement = () => {
-    setCount(prevCount => prevCount + 1);
-  };
-
-  //Create handleDecrement event handler
-  const handleDecrement = () => {
-    setCount(prevCount => prevCount - 1);
-  };
+    let {name,quantity,total} = props
+  
     return (
-        <div>
-            <div>
-                <button onClick={handleDecrement}>-</button>
-                <h5>Count is {count}</h5>
-                <button onClick={handleIncrement}>+</button>
-            </div>
-            <button onClick={() => setCount(0)}>Reset</button>
-        </div>
+      <>
+        {quantity > 0 ? (
+             <div className="background">
+                <h1>You have these items on cart:</h1>
+             <div className="item">
+               <h2>Product: {name}</h2>
+               <h2>Quantity:{quantity}</h2>
+               <h2>Total: ${total.toFixed([2])}</h2>
+             </div>
+ 
+         </div>
+        ): <div className="background">
+              <h1>There are no products</h1>
+          </div>
+      }
+       
+      </>
     )
+
   }
 
 
