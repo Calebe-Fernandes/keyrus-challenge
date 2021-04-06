@@ -63,31 +63,31 @@ As tecnologias utilizadas foram:
 
 ##  Download e Teste
 
-AINDA EM DESENVOLVIMENTO
+
 
 -  Instalar o [Git](https://git-scm.com/), [NodeJS](https://nodejs.org/pt-br/download/) + [npm](https://www.npmjs.com/get-npm):
 
 ```bash
 # Versões mínimas ou superiores.
-$ node -v
+ node -v
 v12.18.0
 
-$ npm -v
+ npm -v
 6.14.4
 ```
 
 ```bash
 # Clonar o repositório
-$ git clone https://github.com/Calebe-Fernandes/keyrus-challenge
+ git clone https://github.com/Calebe-Fernandes/keyrus-challenge
 
 #Entrar no diretório
-$ cd keyrus-challenge
+ cd keyrus-challenge
 
 #Instalar as dependências
-$ npm install
+ npm install
 
 #Iniciar o local host
-$ npm start
+ npm start
 ```
 
 - Por ultimo abra seu navegador e digite:
